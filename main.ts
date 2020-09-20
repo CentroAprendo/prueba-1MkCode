@@ -189,12 +189,24 @@ let Enemigo_2 = sprites.create(img`
     . . . f 7 6 e e f e e 6 7 f . . 
     . . f 6 7 7 6 f . f 6 7 6 f . . 
     `, SpriteKind.Player)
-Enemigo_2.setPosition(80, 60)
+Enemigo_2.setPosition(90, 60)
 forever(function () {
+    music.setVolume(10)
     music.playMelody("C C D E E D F A ", 120)
 })
 forever(function () {
+    music.setVolume(10)
     music.playMelody("B A - A G - G F ", 120)
+})
+forever(function () {
+    for (let index = 0; index < 40; index++) {
+        Enemigo_2.y += 2
+        pause(100)
+    }
+    for (let index = 0; index < 40; index++) {
+        Enemigo_2.y += -2
+        pause(100)
+    }
 })
 forever(function () {
     if (Jugador_1.overlapsWith(Enemigo_1)) {
