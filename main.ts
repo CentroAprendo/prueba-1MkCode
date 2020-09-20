@@ -160,3 +160,21 @@ let Enemigo_1 = sprites.create(img`
     `, SpriteKind.Enemy)
 Enemigo_1.setPosition(120, 55)
 controller.player2.moveSprite(Enemigo_1, 100, 100)
+let mySprite = sprites.create(img`
+    . . f . . . f f f f . . . f . . 
+    . f 7 f . f 7 7 7 7 f . f 7 f . 
+    . f 6 7 f 7 7 7 7 7 7 f 7 6 f . 
+    . . f 7 7 f f 7 7 f f 7 7 f . . 
+    . . . f 7 6 6 7 7 6 6 6 f . . . 
+    . . . f 6 6 d 6 6 d 6 6 f f . . 
+    . f f 6 f 6 f f f f 6 f 6 7 f . 
+    f 7 7 6 6 f 6 6 6 6 f 6 7 7 f . 
+    f 7 7 6 7 6 f f f f 6 7 7 7 f . 
+    f 7 6 f 7 7 7 7 7 7 7 7 6 7 7 f 
+    f 7 f 6 7 6 7 7 7 7 6 7 f 6 7 f 
+    f 6 6 6 7 7 7 7 7 7 7 7 6 f 6 f 
+    f 6 6 f f f 7 6 6 7 7 f f f f . 
+    . f f f e e f f f f f e e f . . 
+    . . . f 7 6 e e f e e 6 7 f . . 
+    . . f 6 7 7 6 f . f 6 7 6 f . . 
+    `, SpriteKind.Player)
